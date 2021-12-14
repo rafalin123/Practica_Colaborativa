@@ -9,19 +9,19 @@ public class Proyecto {
 			Random claseRandom = new Random(); // Esto crea una instancia de la Clase Random
 		   
 			//Creamos el vector que almacena las temperaturas
-			int temp[] = new int[24];
+			int temp[] = new int[24];	//
 			int mayor,menor;
 			mayor = menor = temp[0];
 // creamos un bucle que no cree las temperaturas de cada hora
 		
-		for (int i = 0; i < temp.length; i++)
+		for (int i = 0; i < temp.length; i++) //Con este para recorremos todos los elementos del vector temp
 		{
-			temp[i]=claseRandom.nextInt(40);
+			temp[i]=claseRandom.nextInt(40); //Generamos un número aleatorio para cada uno de los elementos del vector
 			
 			if (temp[i] > mayor) {
-				mayor = temp[i];
+				mayor = temp[i];			//En caso de que el elemento sea mayor que el numero mayor se guarda en la variable mayor
 			}
-			if (temp[i] < menor) {
+			if (temp[i] < menor) {			//Si el valor del elemento es menor que el valor de la variable menor entonces el valor del elemento se guarda en la variable
 				menor = temp[i];	
 			}
 		}
